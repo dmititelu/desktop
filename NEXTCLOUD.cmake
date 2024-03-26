@@ -1,6 +1,13 @@
-set( APPLICATION_NAME       "Nextcloud" )
-set( APPLICATION_SHORTNAME  "Nextcloud" )
-set( APPLICATION_EXECUTABLE "nextcloud" )
+if(WIN32)
+    set( APPLICATION_NAME       "Online-Dateiablage" )
+    set( APPLICATION_SHORTNAME  "Online-Dateiablage" )
+    set( APPLICATION_EXECUTABLE "online-dateiablage" )
+else()
+    set( APPLICATION_NAME       "Nextcloud" )
+    set( APPLICATION_SHORTNAME  "Nextcloud" )
+    set( APPLICATION_EXECUTABLE "nextcloud" )
+endif()
+
 set( APPLICATION_CONFIG_NAME "${APPLICATION_EXECUTABLE}" )
 set( APPLICATION_DOMAIN     "nextcloud.com" )
 set( APPLICATION_VENDOR     "Nextcloud GmbH" )
@@ -49,7 +56,12 @@ option(ENFORCE_SINGLE_ACCOUNT "Enforce use of a single account in desktop client
 option( DO_NOT_USE_PROXY "Do not use system wide proxy, instead always do a direct connection to server" OFF )
 
 ## Theming options
-set(NEXTCLOUD_BACKGROUND_COLOR "#0082c9" CACHE STRING "Default Nextcloud background color")
+if(WIN32)
+    set(NEXTCLOUD_BACKGROUND_COLOR "#003064" CACHE STRING "Default Nextcloud background color")
+else()
+    set(NEXTCLOUD_BACKGROUND_COLOR "#0082c9" CACHE STRING "Default Nextcloud background color")
+endif()
+
 set( APPLICATION_WIZARD_HEADER_BACKGROUND_COLOR ${NEXTCLOUD_BACKGROUND_COLOR} CACHE STRING "Hex color of the wizard header background")
 set( APPLICATION_WIZARD_HEADER_TITLE_COLOR "#ffffff" CACHE STRING "Hex color of the text in the wizard header")
 option( APPLICATION_WIZARD_USE_CUSTOM_LOGO "Use the logo from ':/client/theme/colored/wizard_logo.(png|svg)' else the default application icon is used" ON )
