@@ -1592,8 +1592,8 @@ This action will abort any currently running synchronization.</source>
         <translation>خطأ خادوم: رد PROPFIND ليس على نسق XML!</translation>
     </message>
     <message>
-        <location filename="../src/libsync/discoveryphase.cpp" line="676"/>
-        <location filename="../src/libsync/discoveryphase.cpp" line="705"/>
+        <location filename="../src/libsync/discoveryphase.cpp" line="675"/>
+        <location filename="../src/libsync/discoveryphase.cpp" line="704"/>
         <source>Encrypted metadata setup error!</source>
         <translation>خطأ في إعدادات البيانات الوصفية المشفرة!</translation>
     </message>
@@ -3941,8 +3941,8 @@ This is a new, experimental mode. If you decide to use it, please report any iss
         <translation>خطأ في تحديث البيانات الوصفية metadata بسبب أن &quot;آخر وقت تعديل للملف&quot; غير صالح</translation>
     </message>
     <message>
-        <location filename="../src/libsync/owncloudpropagator.cpp" line="1469"/>
-        <location filename="../src/libsync/owncloudpropagator.cpp" line="1494"/>
+        <location filename="../src/libsync/owncloudpropagator.cpp" line="1470"/>
+        <location filename="../src/libsync/owncloudpropagator.cpp" line="1495"/>
         <source>The folder %1 cannot be made read-only: %2</source>
         <translation>المجلد %1؛ لا يمكن جعله للقراءة فقط: %2</translation>
     </message>
@@ -4064,7 +4064,7 @@ This is a new, experimental mode. If you decide to use it, please report any iss
         <translation>تعذّر إنشاء المجلد %1</translation>
     </message>
     <message>
-        <location filename="../src/libsync/propagatorjobs.cpp" line="222"/>
+        <location filename="../src/libsync/propagatorjobs.cpp" line="229"/>
         <source>The folder %1 cannot be made read-only: %2</source>
         <translation>المجلد %1؛ لا يمكن جعله للقراءة فقط: %2</translation>
     </message>
@@ -4169,7 +4169,7 @@ This is a new, experimental mode. If you decide to use it, please report any iss
         <translation>أرجع الخادم كود بروتوكول HTTP خاطئ. متوقع 201 ، ولكن تم تلقي &quot;٪ 1٪ 2&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/libsync/propagateremotemkdir.cpp" line="254"/>
+        <location filename="../src/libsync/propagateremotemkdir.cpp" line="258"/>
         <source>Failed to encrypt a folder %1</source>
         <translation>تعذّر تشفير المجلد %1</translation>
     </message>
